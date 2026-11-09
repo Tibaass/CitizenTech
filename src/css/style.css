@@ -20,6 +20,10 @@
   display: flex;
   list-style: none;
   gap: 28px;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 40px;
+  padding-left: 0;
 }
 
 body {
@@ -38,5 +42,35 @@ p{
 }
 
 section{
+  margin: 20px 50px 20px 50px;
+}
+
+h2{
+  color: var(--corTitulo);
+}
+
+.alerta{
+  display: flex;
+  flex-direction: row;
+  margin: auto 50px;
+}
+
+.phone{
+  display: flex;
+  height: 400px;
+  width: 300px;
   margin: 20px;
+}
+
+.educacao{
+  color: var(--corTextoParagrafo);
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-inline-start: 0px;
+  flex-direction: column;
+  text-align: left;
+}
+
+.spaceLi{
+  padding-bottom: 15px;
 }
