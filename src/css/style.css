@@ -94,3 +94,115 @@ h2{
 .spaceLi{
   padding-bottom: 15px;
 }
+
+.persona-intro {
+  margin-top: 60px;
+}
+
+.persona-card {
+    width: 100%;
+    max-width: 750px;
+    margin: 35px;
+    border: 1px solid #475569;
+    border-radius: 15px;
+    padding: 20px 20px;
+    padding-bottom: 10px;
+}
+
+.persona-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.persona-header img {
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.persona-info h2 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.persona-tag {
+    display: inline-block;
+    background-color: #073d25;
+    color: #00e676;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.persona-info p {
+    font-size: 13px;
+    color: white;
+}
+
+.persona-content section {
+    margin-bottom: 14px;
+    color: white;
+}
+
+.persona-content h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.persona-content p,
+.persona-content li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.persona-content ul {
+    padding-left: 32px;
+}
+
+.persona-content li {
+    padding-left: 2px;
+}
+
+/* Responsividade para celulares */
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .persona-header img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .persona-info h2 {
+        font-size: 15px;
+    }
+
+    .persona-info p {
+        font-size: 12px;
+    }
+
+    .persona-content p,
+    .persona-content li {
+        font-size: 13px;
+    }
+}
+
+.personas-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.personas-container .persona-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 750px;
+}
