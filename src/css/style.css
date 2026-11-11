@@ -169,15 +169,15 @@ section.sinais {
 
 .persona-layout {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: minmax(0, 750px) minmax(0, 480px);
     align-items: center;
-    gap: 45px;
+    justify-content: start;
+    column-gap: 250px;
     margin: 60px 50px 0;
-    transform: translateX(40px);
 }
 
 .persona-intro {
-    margin: 0;
+    margin-left: 100px;
 }
 
 .titulo {
@@ -193,14 +193,13 @@ section.sinais {
 }
 
 .foto-golpe {
-    width: 100%;
-    max-width: 480px;
-    height: 300px;
+    width: 150%;
+    max-width: 580px;
+    height: 340px; 
     object-fit: cover;
     object-position: center;
-    justify-self: end;
+    justify-self: start;
     border-radius: 15px;
-    transform: translateX(-100px);
 }
 
 /* Cards das personas */
