@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia</title>
+    <title>Fique Ligado | Solução</title>
 
     <link rel="icon" href="data:,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,16 +14,48 @@
 </head>
 <body>
     <header class="topo">
-        <a class="nomeSite" href="index.html">Golpe<span>Check</span></a>
+        <a class="nomeSite" href="../../index.html">Fique<span>Ligado</span></a>
         <nav>
           <ul class = "nav-links">
-              <li><a href="index.html">Início</a></li>
-              <li><a href="src/pages/tecnologia.html">Tecnologia</a></li>
-              <li><a href="src/pages/objetivos.html">Objetivos</a></li>
-              <li><a href="src/pages/publicoAlvo.html">Público Alvo</a></li>
-              <li><a href="src/pages/beneficios.html">Benefícios</a></li>
+              <li><a href="../../index.html">Início</a></li>
+              <li><a href="tecnologia.html">Tecnologia</a></li>
+              <li><a href="objetivos.html">Objetivos</a></li>
+              <li><a href="publicoAlvo.html">Público Alvo</a></li>
+              <li><a href="beneficios.html">Benefícios</a></li>
           </ul>
         </nav>
     </header>
+    <main>
+        <section class="ajuste">
+            <div class="texto-container">
+                <h1 id="titulo">
+                    Verifique se a mensagem é um golpe!
+                </h1>
+                <p id="techtexto">
+                    O FiqueLigado utiliza de um sistema de palavras chaves para identificar possíveis golpes digitais.
+                </p>
+                <p class="techtexto">
+                    Pensando nisso, nosso projeto busca tornar a identificação de possíveis golpes mais simples, ajudando as pessoas a reconhecer mensagens suspeitas antes que seja tarde.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="verificador" id="verificar" aria-labelledby="verificar-titulo">
+            <h2 id="verificar-titulo">Cole a mensagem que você recebeu</h2>
+            <p>Copie o texto exatamente como chegou, com links e números. Nós mostramos os sinais de golpe que encontrarmos.</p>
+            <form id="form-verificador" action="resultado.html">
+                <label for="mensagem">Mensagem recebida</label>
+                <textarea id="mensagem" name="mensagem" maxlength="2000"
+                    placeholder="Ex.: Seu CPF foi bloqueado. Regularize agora em bit.ly/exemplo"></textarea>
+                <div class="form-botao">
+                    <button type="submit" class="botao">Verificar mensagem</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

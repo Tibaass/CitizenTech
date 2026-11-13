@@ -12,7 +12,6 @@
 /* Conteúdo principal */
 
 .content {
-    max-width: var(--largura);
     margin: auto 70px;
     padding: 72px 24px 20px 24px;
     display: grid;
@@ -24,6 +23,14 @@
 .content h1 {
     font-size: 3em;
     font-weight: 800;
+}
+
+h1#titulo {
+    margin-bottom: 15px;
+}
+
+p#techtexto{
+    margin-top: 10px;
 }
 
 .content p {
@@ -170,7 +177,7 @@ section.sinais {
     grid-template-columns: minmax(0, 750px) minmax(0, 480px);
     align-items: center;
     justify-content: start;
-    column-gap: 250px;
+    column-gap: 100px;
     margin: 60px 50px 0;
 }
 
@@ -191,7 +198,7 @@ section.sinais {
 }
 
 .foto-golpe {
-    width: 150%;
+    width: 110%;
     max-width: 580px;
     height: 340px; 
     object-fit: cover;
@@ -246,16 +253,6 @@ section.sinais {
     margin-bottom: 8px;
 }
 
-.persona-tag {
-    display: inline-block;
-    background-color: #073d25;
-    color: #00e676;
-    padding: 4px 9px;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
 .persona-info p {
     font-size: 13px;
     color: white;
@@ -283,6 +280,77 @@ section.sinais {
 
 .persona-content li {
     padding-left: 2px;
+}
+
+/* Tecnologia */
+
+.ajuste{
+    margin: auto 70px;
+    padding: 25px 25px 20px 25px;
+    display: grid;
+    align-items: center;
+    gap: 48px;
+}
+
+.verificador {
+    max-width: 760px;
+    margin: 0 auto 72px;
+    padding: 40px 24px;
+    background-color: #2e303f;
+    border: 1px solid var(--corDestaque);
+    border-radius: 20px;
+}
+
+.verificador h2 { 
+    font-size: clamp(1.4rem, 3vw, 2rem); 
+}
+
+.verificador > p { 
+    margin-top: 12px; 
+    color: var(--corSecundaria); 
+    max-width: 60ch; 
+}
+
+.verificador form { 
+    margin-top: 24px; 
+}
+
+.verificador label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: 600px; 
+}
+
+.verificador textarea {
+    width: 695px;
+    max-width: 100%;
+    min-height: 140px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--corTextoParagrafo);
+    background: var(--fundo);
+    border: 1px solid var(--corComplementar);
+    border-radius: 10px;
+}
+
+.verificador textarea::placeholder { 
+    color: var(--corComplementar); 
+}
+
+.form-botao{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.botao{
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 /* Responsividade */
