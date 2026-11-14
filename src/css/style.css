@@ -385,6 +385,12 @@ section.sinais {
     font-weight: 700;
 }
 
+.golpe-img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
 .lista-sugestao{
     margin: 16px 0 24px;
     padding-left: 22px;
@@ -437,7 +443,95 @@ section.sinais {
     color: #FFFFFF;
 }
 
+/*Página Fantasma Suspeito*/
 
+.caixa-suspeito {
+    display: grid;
+    gap: 20px 24px;
+    align-items: center;
+    background-color: rgb(224, 224, 30);
+    color: black;
+    border-radius: 20px;
+    margin: 24px;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caixa-sugestao{
+    display: grid;
+    align-items: center;
+    border-top: 5px solid #1B6B45;
+    background-color: #ffff;
+    border: 1px solid #DDE0E7;
+    border-radius: 16px;
+    margin: 24px;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-sugestao{
+    color: #1B6B45;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.lista-sugestao{
+    margin: 16px 0 24px;
+    padding-left: 22px;
+    display: grid;
+    gap: 10px;
+    color: black;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+.botao-denuncia{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color .2s, color .2s;
+}
+
+.config-link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.botao-verificar{
+    background: #1B6B45;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.botao-verificar:hover{
+    background: #14523A;
+}
+
+.botao-denuncie{
+    background: transparent;
+    color: #1B6B45;
+    border: 2px solid #1B6B45;
+}
+
+.botao-denuncie:hover{
+    background: #1B6B45;
+    color: #FFFFFF;
+}
+
+.suspeito-img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
 
 /* Responsividade */
 
