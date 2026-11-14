@@ -367,6 +367,23 @@ section.sinais {
     font-family: 'Montserrat', sans-serif;
 }
 
+.caixa-golpe h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa-golpe img{
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-golpe p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .caixa-sugestao{
     display: grid;
     align-items: center;
@@ -415,6 +432,8 @@ section.sinais {
     font-size: 1rem;
     text-decoration: none;
     transition: background-color .2s, color .2s;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .config-link{
@@ -455,6 +474,23 @@ section.sinais {
     margin: 24px;
     padding: 24px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.caixa-suspeito h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa-suspeito img{
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-suspeito p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .caixa-sugestao{
@@ -531,6 +567,66 @@ section.sinais {
     width: 100px;
     height: 100px;
     justify-self: center;
+}
+
+/* Página Fantasma NoGolpe */
+
+.caixa-normal {
+    display: grid;
+    align-items: center;
+    border-top: 5px solid #1B6B45;
+    background-color: #00914d;
+    border: 1px solid #DDE0E7;
+    border-radius: 16px;
+    margin: 24px;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.caixa-normal h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa-normal img{
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-normal p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.normal-img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
+.botao-mensagem{
+    background: #ffff;
+    color: #1B6B45;
+    padding-bottom: 10px;
+}
+
+.botao-mensagem:hover{
+    background: #14523A;
+    color: #FFFFFF;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--fundo);
+    color: var(--corSecundaria);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
 /* Responsividade */
