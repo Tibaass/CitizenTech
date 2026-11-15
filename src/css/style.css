@@ -11,6 +11,57 @@
 
 /* Conteúdo principal */
 
+.fundoPopup{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-content: center;
+    z-index: 1000;
+}
+
+.fundoPopup.ativo{
+    display: flex;
+}
+
+.caixaDeAprovacao{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 450px;
+    height: 550px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.caixaDeAprovacao h1 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 15px;
+}
+
+.caixaDeAprovacao button {
+    background-color: red;
+    height: 50px;
+    width: 150px;
+}
+
+.caixaDeAprovacao img {
+    height: 250px;
+    width: 250px;
+}
+
+.imagemCheckVerde{
+    height: 50px;
+    width: 50px;
+}
+
+
 .content {
     margin: auto 70px;
     padding: 72px 24px 20px 24px;
@@ -91,7 +142,7 @@ p#techtexto{
 /* Fim do Header */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+        
     margin: 0;
     padding: 0;
     background-color: var(--fundo);
