@@ -9,6 +9,10 @@
     --corComplementar: #727C91;
 }
 
+*{
+    font-family: montserrat, sans-serif;
+}
+
 /* Conteúdo principal */
 
 .fundoPopup{
@@ -41,7 +45,7 @@
 
 .caixaDeAprovacao h1 {
     color: black;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: inherit;
     font-size: 15px;
 }
 
@@ -415,7 +419,7 @@ section.sinais {
     border-radius: 20px;
     margin: 24px;
     padding: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
 }
 
 .caixa-golpe h1{
@@ -444,7 +448,7 @@ section.sinais {
     border-radius: 16px;
     margin: 24px;
     padding: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
 }
 
 .titulo-sugestao{
@@ -524,7 +528,7 @@ section.sinais {
     border-radius: 20px;
     margin: 24px;
     padding: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
 }
 
 .caixa-suspeito h1{
@@ -553,7 +557,7 @@ section.sinais {
     border-radius: 16px;
     margin: 24px;
     padding: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
 }
 
 .titulo-sugestao{
@@ -631,7 +635,7 @@ section.sinais {
     border-radius: 16px;
     margin: 24px;
     padding: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
     color: black;
 }
 
