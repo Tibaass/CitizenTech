@@ -38,10 +38,10 @@ function CalcularPontuacaoMensagemUsuario(mensagem){
 
 function AtribuirCriticidadeMensagem(pontuacao){
     if (pontuacao >= 61){
-        window.location.href = "../pages/golpe.html";
+        window.location.href = "./pages/golpe.html";
     } else if(pontuacao >= 40 && pontuacao <= 60) { 
-        window.location.href = "../pages/suspeito.html";
+        window.location.href = "./pages/suspeito.html";
     } else {
-        window.location.href = "../pages/nogolpe.html";
+        window.location.href = "./pages/nogolpe.html";
     }
 }

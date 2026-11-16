@@ -15,57 +15,6 @@
 
 /* Conteúdo principal */
 
-.fundoPopup{
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0,0,0,0);
-    justify-content: center;
-    align-content: center;
-    z-index: 1000;
-}
-
-.fundoPopup.ativo{
-    display: flex;
-}
-
-.caixaDeAprovacao{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 450px;
-    height: 550px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.caixaDeAprovacao h1 {
-    color: black;
-    font-family: inherit;
-    font-size: 15px;
-}
-
-.caixaDeAprovacao button {
-    background-color: red;
-    height: 50px;
-    width: 150px;
-}
-
-.caixaDeAprovacao img {
-    height: 250px;
-    width: 250px;
-}
-
-.imagemCheckVerde{
-    height: 50px;
-    width: 50px;
-}
-
-
 .content {
     margin: auto 70px;
     padding: 72px 24px 20px 24px;
@@ -135,7 +84,7 @@ p#techtexto{
     text-decoration: none;
     padding: 10px 16px;
     font-size: 1rem;
-    border: 1px solid #2563EB;
+    border-bottom: 1px solid #2563EB;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
