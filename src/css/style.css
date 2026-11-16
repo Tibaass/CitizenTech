@@ -99,12 +99,15 @@ p#techtexto{
 .topo {
     max-width: var(--largura);
     margin: 0 auto;
-    padding: 24px 24px 0;
+    padding: 24px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    background-color: #2f323f;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.322);
 }
 
 .nomeSite {
@@ -674,14 +677,98 @@ section.sinais {
     color: #FFFFFF;
 }
 
+/* objetivos */
+
+.objetivos {
+    padding: 64px 8%;
+    color: #fff;
+}
+
+.objetivos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+.objetivos h2 span {
+    color: var(--corDestaque); 
+}
+
+.introducao {
+    max-width: 720px;
+    line-height: 1.6;
+    color: var(--corSecundaria);
+    margin-bottom: 40px;
+}
+
+.objetivos h3 {
+    font-size: 1.4rem;
+    color: var(--corDestaque);
+    margin-bottom: 24px;
+}
+
+.objetivos-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.objetivos-lista li {
+    position: relative;
+    padding: 14px 18px 14px 48px;
+    border: 1px solid var(--corSecundaria);
+    border-radius: 10px;
+    line-height: 1.5;
+    transition: transform .2s, background .2s;
+}
+
+.objetivos-lista li:hover {
+    transform: translateX(6px);
+    border: 1px solid var(--corPrincipal);
+}
+
+.objetivos-lista li.meta {
+  border: 1px solid #ff7a00;
+  background: rgba(255, 122, 0, .08);
+}
+.objetivos-lista li.meta strong { 
+    color: #ff7a00; 
+}
+
+.objetivos-lista li::before {
+    content: "✓";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ff7a00;
+    color: #1f2029;
+    font-size: .8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* footer */
 
 footer {
     background-color: var(--fundo);
     color: var(--corSecundaria);
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     font-size: 0.9rem;
+    
+}
+
+.config {
+    padding: 20px;
 }
 
 /* Responsividade */
