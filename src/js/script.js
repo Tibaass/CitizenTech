@@ -1,18 +1,45 @@
 const palavras_suspeitas = {"premio": 20, "parabens": 5, "ganhou": 10, "clique": 20, "aqui": 5, "receber": 10, "urgente": 20, "transferencia": 20, "pix": 20, "senha": 20, "cartao": 15, "banco": 15, "dinheiro": 10, "oferta": 10, "desconto": 10, "grátis": 10, "vencedor": 10, "prêmio": 15, "ganhador": 15}
-const links_suspeitos = ["http://", "https://", "www.", "bit.ly"]
-const botaoApertado = document.getElementById('form-verificador')
+const links_suspeitos = ["http://", "https://", "www.", "bit.ly"];
+const botaoApertado = document.getElementById('form-verificador');
+const caixaErro = document.getElementById('erro-mensagem');
+const botaoFechar = document.querySelector('.botao-fechar');
+const campoMensagem = document.getElementById('mensagem');
 
 botaoApertado.addEventListener('submit', function(event) {
     event.preventDefault();
     const mensagemEnviada = document.getElementById('mensagem').value.trim();
+    if (mensagemEnviada == ""){
+        abrirErro();
+        return;
+    }
     const mensagemPontuacao = CalcularPontuacaoMensagemUsuario(mensagemEnviada);
-    AtribuirCriticidadeMensagem(mensagemPontuacao)
+    AtribuirCriticidadeMensagem(mensagemPontuacao);
+})
+
+function abrirErro(){
+    caixaErro.classList.add('ativa');
+    campoMensagem.classList.add('campo-erro');
+    botaoFechar.focus();
+}
+
+function fecharErro() {
+    caixaErro.classList.remove('ativa')
+    campoMensagem.focus()
+}
+
+botaoFechar.addEventListener('click', fecharErro)
+caixaErro.addEventListener('click', function(e) {
+    if (e.target == caixaErro) fecharErro();
+})
+
+campoMensagem.addEventListener('input', function() {
+    campoMensagem.classList.remove('campo-erro')
 })
 
 function CalcularPontuacaoMensagemUsuario(mensagem){
-    let textosSuspeitosNaMensagem = 0
-    let pontuacao = 0
-    let qtdPalavrasMensagem = (mensagem.split(` `)).length
+    let textosSuspeitosNaMensagem = 0;
+    let pontuacao = 0;
+    let qtdPalavrasMensagem = (mensagem.split(` `)).length;
     
     // Primeira verificação de Palavras Suspeitas
     for (let palavra in palavras_suspeitas) {
