@@ -1,4 +1,3 @@
-// Slideshow das personas (página Público Alvo)
 const trilho = document.querySelector('.slides-trilho');
 const slides = document.querySelectorAll('.slides-trilho .persona-card');
 const indicadores = document.querySelector('.slide-indicadores');

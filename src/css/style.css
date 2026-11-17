@@ -13,8 +13,6 @@
     font-family: montserrat, sans-serif;
 }
 
-/* Conteúdo principal */
-
 .content {
     margin: auto 70px;
     padding: 72px 24px 20px 24px;
@@ -102,14 +100,11 @@ p#techtexto{
 }
 
 .nav-links a:hover {
-    /* background-color: #2563EB; */
     border-bottom: 1px solid #f3f4f5;
     color: #FFFFFF;
     font-size: 20px;
-    /* box-shadow: 0 0 10px rgba(37, 99, 235, 0.4); */
 }
 
-/* Fim do Header */
 
 body {
         
@@ -190,9 +185,6 @@ section.sinais {
 .spaceLi {
     padding-bottom: 15px;
 }
-
-/* Público-Alvo */
-
 .persona-layout {
     display: grid;
     grid-template-columns: minmax(0, 750px) minmax(0, 480px);
@@ -228,21 +220,16 @@ section.sinais {
     border-radius: 15px;
 }
 
-/* Cards das personas */
-
-/* Slideshow das personas */
 .personas-container {
     max-width: 750px;
     margin: 35px auto;
 }
 
-/* Mostra só um card; o resto fica escondido dos lados */
 .slides-janela {
     overflow: hidden;
     border-radius: 15px;
 }
 
-/* Fila com todos os cards lado a lado, que desliza */
 .slides-trilho {
     display: flex;
     align-items: flex-start;

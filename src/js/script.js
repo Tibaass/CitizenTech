@@ -33,7 +33,7 @@ caixaErro.addEventListener('click', function(e) {
 })
 
 campoMensagem.addEventListener('input', function() {
-    campoMensagem.classList.remove('campo-erro')
+    campoMensagem.classList.remove('campo-erro');
 })
 
 function CalcularPontuacaoMensagemUsuario(mensagem){
