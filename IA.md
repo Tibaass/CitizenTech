@@ -1,0 +1,1 @@
+- Utilizada a IA para a ajuda no Transform do SlideShow

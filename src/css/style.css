@@ -230,13 +230,98 @@ section.sinais {
 
 /* Cards das personas */
 
+/* Slideshow das personas */
 .personas-container {
+    max-width: 750px;
+    margin: 35px auto;
+}
+
+/* Mostra só um card; o resto fica escondido dos lados */
+.slides-janela {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Fila com todos os cards lado a lado, que desliza */
+.slides-trilho {
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.5s ease;
+}
+
+.slides-controles {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin: 35px;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.slide-btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #475569;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--corTitulo);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.erro-fundo {
+    display: none;
+    position: fixed;
+    inset: 0;     
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.erro-fundo.ativa {
+    display: flex;
+}
+.div-erro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    width: 90%;
+    max-width: 360px;
+    padding: 28px 24px;
+    background: var(--fundo);
+    border: 1px solid var(--corDestaque); 
+    border-radius: 15px;
+    color: var(--corTextoParagrafo);
+}
+
+.div-erro img {
+    width: 90px;
+    height: 90px;
+}
+
+.div-erro h3 {
+    color: var(--corDestaque);
+    margin: 0;
+}
+
+.div-erro p {
+    margin: 0;
+    color: var(--corSecundaria);
+}
+
+.slide-btn:hover,
+.slide-btn:focus-visible {
+    background: var(--corPrincipal);
+    border-color: var(--corPrincipal);
+}
+
+.slide-indicadores {
+    display: flex;
+    gap: 10px;
 }
 
 .persona-card {
@@ -250,9 +335,9 @@ section.sinais {
 }
 
 .personas-container .persona-card {
-    flex: 1;
-    min-width: 300px;
-    max-width: 750px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .persona-header {
@@ -752,12 +837,6 @@ footer {
 
     .personas-container {
         margin: 25px 20px;
-    }
-
-    .personas-container .persona-card {
-        min-width: 0;
-        width: 100%;
-        flex-basis: 100%;
     }
 
     .educacao {

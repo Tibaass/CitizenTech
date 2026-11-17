@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="src/js/script.js" defer></script>
+    <script src="../js/slideshow.js" defer></script>
 </head>
 
 <body>
@@ -51,7 +51,9 @@
             >
         </div>
 
-        <section class="personas-container">
+        <section class="personas-container" aria-label="Personas">
+          <div class="slides-janela">
+           <div class="slides-trilho">
             <div class="persona-card">
                 <div class="persona-header">
 
@@ -137,6 +139,58 @@
                     </section>
                 </div>
             </div>
+
+            <!-- Ana -->
+            <div class="persona-card">
+                <div class="persona-header">
+                    <img src="../img/Ana.png" alt="Foto de Ana">
+
+                    <div class="persona-info">
+                        <h2>Ana, 34 anos</h2>
+                        <p>Mãe e autônoma, vende produtos pelo WhatsApp e Instagram e recebe pagamentos via Pix.</p>
+                    </div>
+                </div>
+
+                <div class="persona-content">
+
+                    <section>
+                        <h3>Comportamento</h3>
+                        <ul>
+                            <li>Recebe muitas mensagens de clientes e contatos desconhecidos todos os dias.</li>
+                            <li>Faz e recebe transferências via Pix com frequência.</li>
+                            <li>Participa de vários grupos de família e de vendas no WhatsApp.</li>
+                            <li>Costuma responder rápido para não perder vendas.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Principal dificuldade</h3>
+                        <p>
+                            Golpes como o do "falso parente com número novo" ou
+                            comprovantes de Pix falsos chegam misturados às conversas
+                            reais, e a pressa em atender faz com que Ana nem sempre
+                            perceba os sinais de fraude.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Necessidade</h3>
+                        <p>
+                            Uma forma prática de conferir uma mensagem antes de
+                            transferir dinheiro, que aponte os sinais de golpe de
+                            maneira clara e direta.
+                        </p>
+                    </section>
+                </div>
+            </div>
+           </div>
+          </div>
+
+          <div class="slides-controles">
+              <button type="button" class="slide-btn slide-anterior">&#8249;</button>
+              <div class="slide-indicadores"></div>
+              <button type="button" class="slide-btn slide-proximo">&#8250;</button>
+          </div>
         </section>
     </main>
     <footer>
