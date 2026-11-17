@@ -69,6 +69,6 @@ function AtribuirCriticidadeMensagem(pontuacao){
     } else if(pontuacao >= 40 && pontuacao <= 60) { 
         window.location.href = "suspeito.html";
     } else {
-        window.location.href = "nogolpe.html";
+        window.location.href = "noGolpe.html";
     }
 }
